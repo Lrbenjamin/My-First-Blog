@@ -26,4 +26,5 @@ WHEN I take a closer look at a single blog entry in the list,
 THEN I can see the title, the content, and the author of the post.
 WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
+![Screenshot 2024-03-28 213710](https://github.com/Lrbenjamin/My-First-Blog/assets/161282417/015d7343-588c-46e0-ba19-8fde0927953e)
 
