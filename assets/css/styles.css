@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f0f8ff; 
+    color: #000000; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    text-size-adjust: 100%;
+}
+
+body.dark-mode {
+    background-color: #333333; 
+    color: #000000; 
+}
+
+header {
+    background-color: #e5e5e5; 
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Container styles */
+.header-container {
+    display: flex; 
+    justify-content: end; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.toggle-container {
+    display: flex; 
+    align-items: end; 
+}
+
+.content-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.image-container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Image styles */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: larger;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0e8ae6;
+}
+
+p {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+textarea#content {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 200px;
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .image-container,
+    main {
+        width: 100%;
+    }
+}
+
+body.dark-mode main {
+    background-color: #555555; 
+    color: #ffffff; 
+}
+
+body.dark-mode header {
+    background-color: #1b1b1b; 
+    color: #ffffff; 
+}
